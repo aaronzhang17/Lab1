@@ -10,6 +10,7 @@ while True:
     discount = Invoice().inputNumber("Discount percent(%): ")
     repeat = Invoice().inputAnswer("Another product? (y,n): ")
     result = Invoice().addProduct(qnt, unit_price, discount)
+    products[product] = result
     if repeat == "n":
         break
 
